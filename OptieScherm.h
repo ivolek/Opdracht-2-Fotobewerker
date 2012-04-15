@@ -2,7 +2,7 @@
  * OptieScherm.h
  *
  *  Created on: 3 mrt. 2012
- *      Author: acer
+ *      Author: Ivo Lek
  */
 
 #ifndef OPTIESCHERM_H_
@@ -16,11 +16,10 @@
 #include <MAUI/ListBox.h>
 
 #include <MAUTIL/Vector.h>
-
+#include <mastdlib.h>
 #include "conprint.h"
 
 #include "MAHeaders.h"
-
 
 using namespace MAUtil;
 using namespace MAUI;
@@ -35,7 +34,11 @@ private:
 	Label* roodLabel;
 	Label* groenLabel;
 	Label* blauwLabel;
-
+	EditBox* imageTekst;
+	EditBox* imageSize;
+	Label* toepassenLabel;
+	int achtergrondKleur;
+	int grootte;
 	//todo: voeg editboxen en waardes toe die opgeslagen moeten worden
 
 public:
@@ -44,8 +47,9 @@ public:
 
 	void keyPressEvent(int keyCode, int nativeCode);
 	void pointerPressEvent(MAPoint2d point);
-
+int getImageSize();
 	int getAchtergrondOptie();
+
 	const BasicString<char>getImagetekst(); //geeft text van editbox terug
 };
 

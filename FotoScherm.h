@@ -2,7 +2,7 @@
  * FotoScherm.h
  *
  *  Created on: 3 mrt. 2012
- *      Author: acer
+ *      Author: Ivo Lek
  */
 
 #ifndef FOTOSCHERM_H_
@@ -47,6 +47,7 @@ private:
 public:
 	FotoScherm();
 	virtual ~FotoScherm();
+	void run( MAEvent event );
 
 	//kan key en touch events opvangen
 	void keyPressEvent(int keyCode, int nativeCode);

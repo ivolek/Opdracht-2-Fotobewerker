@@ -2,7 +2,7 @@
  * FotoBewerker.h
  *
  *  Created on: 3 mrt. 2012
- *      Author: acer
+ *      Author: Ivo Lek
  */
 
 #ifndef FOTOBEWERKER_H_
